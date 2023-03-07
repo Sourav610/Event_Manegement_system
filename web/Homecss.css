@@ -1,0 +1,157 @@
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  h1, h2, h3 {
+    font-weight: normal;
+    text-align: center;
+  }
+  
+  #banner {
+    /*background-image: url("Images/Musicevent.jpg");*/
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  #banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  #banner p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  #banner form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #banner input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+  }
+  
+  #banner button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  #events ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #events li {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    flex-basis: calc(33.333% - 1rem);
+  }
+  
+  #events li img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  #events li h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  #events li a {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    text-decoration: none;
+  }
+  
+  #events li a:hover {
+    background-color: #444;
+  }
+  
+  #about p {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #contact label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  #contact input[type="text"], #contact input[type="email"], #contact textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  #contact textarea {
+    height: 150px;
+  }
+  
+  #contact button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }

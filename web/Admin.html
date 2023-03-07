@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="admin.css">
+  </head>
+  <body>
+    <header>
+      <h1>Admin Page</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Users</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Welcome, Admin!</h2>
+      <p>You are currently logged in as Admin.</p>
+      <section>
+        <h3>Events Approval Pending</h3>
+        <ul>
+          <li>
+            <div class="container">
+                    <h1>Event Approval</h1>
+                    <p>Please review the following event details and approve or reject the event:</p>
+
+                    <form method="get" action="ApproveBooking">
+                        <button type="submit">Show Data</button>
+                    </form>
+            </div>
+
+          </li>
+          <li>
+            <a href="#">
+              <img src="event2.jpg" alt="Event 2">
+              <h4>Event 2</h4>
+              <p>June 15, 2023</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="event3.jpg" alt="Event 3">
+              <h4>Event 3</h4>
+              <p>August 10, 2023</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>Recent Users</h3>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="user1.jpg" alt="User 1">
+              <h4>User 1</h4>
+              <p>user1@example.com</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="user2.jpg" alt="User 2">
+              <h4>User 2</h4>
+              <p>user2@example.com</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="user3.jpg" alt="User 3">
+              <h4>User 3</h4>
+              <p>user3@example.com</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

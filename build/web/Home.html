@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="Homecss.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="Login.html">Admin</a></li>
+          <li><a href="CreateEvent.html">Create Event</a></li>
+          <li><a href="eventStatus.html">Check Event Status</a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="banner">
+        <h1>Find Your Next Event</h1>
+        <p>Search, book, and attend events in your area.</p>
+        <form action="#">
+          <input type="text" name="search" placeholder="Search events...">
+          <button type="submit">Search</button>
+        </form>
+      </section>
+      <section id="events">
+        <h2>Upcoming Events</h2>
+        <ul>
+          <li>
+            <img src="Images/Music1.jpg" alt="Event Image">
+            <h3>Music festival</h3>
+            <p>Music festivals are vibrant celebrations of sound and culture, bringing together people from all walks of life to enjoy the euphoric experience of live music in a communal setting.</p>
+            <a href="#">Learn More</a>
+          </li>
+          <li>
+            <img src="Images/Corporate1.jpg" alt="Event Image">
+            <h3>Corporate conference</h3>
+            <p>Corporate conferences provide a platform for professionals to gather, learn, and network with their peers, enabling them to gain valuable insights and stay up-to-date with the latest trends and innovations in their field.</p>
+            <a href="#">Learn More</a>
+          </li>
+          <li>
+            <img src="Images/Outdoor1.jpg" alt="Event Image">
+            <h3>Outdoor Party</h3>
+            <p>Outdoor parties are a great way to enjoy the beautiful weather and create a fun and relaxed atmosphere for your guests.</p>
+            <a href="#">Learn More</a>
+          </li>
+        </ul>
+      </section>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae arcu efficitur, dapibus lorem vel, tincidunt turpis. Ut non felis non lectus elementum varius.</p>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#">
+          <label for="name">Name:</label>
+          <input type="text" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Event Management System</p>
+    </footer>
+  </body>
+</html>

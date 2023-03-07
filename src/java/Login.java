@@ -13,13 +13,21 @@ public class Login extends HttpServlet{
         connection n = new connection();
         n.setEmail(email);
         n.setPass(pass);
+        
        
         boolean result = n.fetch();
         if(result == true){
-            pw1.println("success");
+            if(email == "admin1234@gmail.com"){
+               res.sendRedirect("Admin.html");
+            }
+            else{
+                res.sendRedirect("Home.html");
+            }
         }
         else{
-            pw1.println("Unsuccess");
+//            res.setContentType("text/html");
+//            PrintWriter out = res.getWriter();
+            pw1.println("<h1>Incorrect username or password</h1>");
         }
         
     }

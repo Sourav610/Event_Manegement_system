@@ -27,7 +27,7 @@ public class Register extends HttpServlet{
 
         boolean result = ob.insert();
         if(result == true){
-            pw1.println("success");
+            res.sendRedirect("Login.html");
         }
         else{
             pw1.println("unsuccess");

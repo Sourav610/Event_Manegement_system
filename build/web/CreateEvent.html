@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Event Creation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="createEvent.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="create-event-form">
+          <h2>Create Event</h2>
+          <form method="get" action="createEvent">
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" name="name" required>
+            
+            <label for="event-date">Event Date:</label>
+            <input type="text" id="event-date" name="date" placeholder="DD-MMM-YYYY" required>
+            
+            <label for="event-time">Event Time:</label>
+            <input type="time" id="event-time" name="time" required>
+            
+            <label for="event-location">Event Location:</label>
+            <textarea  id="event-location" name="loc" rows="5" required></textarea>
+            
+            <label for="event-description">Event Description:</label>
+            <textarea id="event-description" name="desc" rows="5" required></textarea>
+            
+            <label for="event-mobile">Mobile Number:</label>
+            <input type="tel" id="event-mobile" name="num" pattern="[0-9]{10}" required>
+            
+            <button type="submit">Create Event</button>
+          </form>
+        </div>
+    </body>
+</html>

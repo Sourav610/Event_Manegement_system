@@ -113,8 +113,37 @@ public class connection {
             Statement stmt = con.createStatement();
             String s1 = "select * from People where email='"+email+"'";
             ResultSet rs = stmt.executeQuery(s1);
+            
             if(rs.next()){
+                sq = rs.getString(6);
                 return true;
+            }
+            else{
+                return false;
+            }
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+        return false;
+    }
+    public boolean Check(){
+         try{
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","system","coding1234");
+            Statement stmt = con.createStatement();
+            String s1 = "select * from People where email='"+email+"'and ans='"+ans+"'";
+            String q1 = "update People set pass='"+pass+"' where email='"+email+"'";
+            ResultSet rs = stmt.executeQuery(s1);
+            if(rs.next()){
+                int x = stmt.executeUpdate(q1);
+                if(x>0){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+//                return true;
             }
             else{
                 return false;
